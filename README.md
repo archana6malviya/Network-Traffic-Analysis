@@ -65,6 +65,11 @@ Shows raw IP addresses and port numbers
 ✔ Faster packet capture
 ✔ Accurate investigation
 ✔ Avoids misleading name resolution
+### Capture traffic using tcpdump & Wireshark
+ping google.com
+ssh localhost
+curl http://example.com
+
 
 ### Scenarios Covered
 - ICMP traffic analysis
