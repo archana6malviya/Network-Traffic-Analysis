@@ -9,6 +9,14 @@ To capture, analyze, and identify normal and suspicious network traffic using Wi
 - Linux (Ubuntu)
 - VirtualBox
 
+### Wireshark Filters
+- Purpose	       | Filter
+- Failed logins 	|tcp.port == 22
+- ICMP flood	   |icmp
+- DNS traffic   	|dns
+- HTTP traffic	| http
+- Specific IP	  |ip.addr == 192.168.56.101
+
 ### Scenarios Covered
 - ICMP traffic analysis
 - DNS and HTTP traffic inspection
