@@ -1,24 +1,22 @@
 ## Network Traffic Analysis using Wireshark and tcpdump
 
-This project demonstrates hands-on practice in capturing and analyzing
-network traffic on Windows and Linux virtual machines using Wireshark
-and tcpdump.
+To capture, analyze, and identify normal and suspicious network traffic using Wireshark and tcpdump in a virtual lab.
+
 
 ### Tools Used
 - Wireshark
 - tcpdump
 - Linux (Ubuntu)
-- Windows 10
 - VirtualBox
 
-### Key Activities
-- Captured live network traffic
-- Applied filters for DNS, ICMP, TCP, HTTP
-- Analyzed failed SSH login attempts
-- Saved and reviewed PCAP files
+### Scenarios Covered
+- ICMP traffic analysis
+- DNS and HTTP traffic inspection
+- Packet capture using tcpdump
+- SSH brute-force attack detection
+- Filtering and identifying suspicious traffic
 
-### Skills Gained
-- Network traffic analysis
-- Packet inspection
-- Linux log analysis
-- SOC analyst fundamentals
+### Key Learnings
+- Packet-level traffic analysis
+- SOC-style investigation approach
+- Hands-on experience with pcap files
