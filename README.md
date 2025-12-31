@@ -17,6 +17,55 @@ To capture, analyze, and identify normal and suspicious network traffic using Wi
 - HTTP traffic	| http
 - Specific IP	  |ip.addr == 192.168.56.101
 
+### tcpdump Advanced Filters
+#### sudo tcpdump -i eth0 tcp
+Captures all TCP traffic on interface
+Shows:
+
+HTTP / HTTPS
+
+SSH
+
+FTP
+
+Any TCP-based communication
+📌 When to use
+
+✔ General network investigation
+✔ Checking if a service is reachable
+✔ Identifying suspicious TCP connections
+#### sudo tcpdump -i eth0 port 22
+Captures traffic only on port 22, Port 22 = SSH
+📌 When to use
+
+✔ Detect SSH login attempts
+✔ Brute-force attack investigation
+✔ Monitor remote access activity
+#### sudo tcpdump -i eth0 icmp
+Captures ping &  ICMP traffic
+ICMP includes:
+
+ping
+
+echo request
+
+echo reply
+
+📌 When to use
+
+✔ Network connectivity testing
+✔ Detect ICMP flooding
+✔ Identify scanning or reconnaissance
+#### sudo tcpdump -nn -i eth0
+No name resolution, No DNS lookup, No port name conversion( Raw packet visibility)
+Shows raw IP addresses and port numbers
+
+📌 Why -nn is important
+
+✔ Faster packet capture
+✔ Accurate investigation
+✔ Avoids misleading name resolution
+
 ### Scenarios Covered
 - ICMP traffic analysis
 - DNS and HTTP traffic inspection
